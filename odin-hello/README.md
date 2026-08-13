@@ -63,7 +63,7 @@ For this, you have two options:
    It will create symbolic links to the required repositories in `../repos/`.
    Be sure to run the [top-level `setup.sh` script](../setup.sh).
 
-   If you want use a custom variant of repositories (e.g. apply your own patch, make modifications), update it accordingly in the `../repos/` directory.
+   If you want to use a custom variant of repositories (e.g. apply your own patch, make modifications), update it accordingly in the `../repos/` directory.
 
 2. Have your custom setup of repositories in the `workdir/` directory.
    Clone, update and customize repositories to your own needs.

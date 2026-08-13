@@ -23,8 +23,8 @@ $(4): $(2)
 			-target:$(ODIN_TARGET) \
 			-o:size \
 			-reloc-mode:pic \
-			-default-to-nil-allocator) \
-			&& mv $(basename $(4)).obj $(4))
+			-default-to-nil-allocator \
+		&& mv $(basename $(4)).obj $(4))
 
 UK_OBJS-y += $(4)
 $(eval $(call vprefix_lib,$(1),OBJS-y) += $(4))
