@@ -24,7 +24,7 @@ $(4): $(2)
 			-o:size \
 			-reloc-mode:pic \
 			-default-to-nil-allocator \
-		&& mv $(basename $(4)).obj $(4))
+		&& { test -f $(4) || { echo "Odin dev-2026-08 or newer is required"; false; }; })
 
 UK_OBJS-y += $(4)
 $(eval $(call vprefix_lib,$(1),OBJS-y) += $(4))
