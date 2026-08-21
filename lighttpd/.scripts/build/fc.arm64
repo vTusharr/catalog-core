@@ -1,5 +1,5 @@
 #!/bin/sh
-export UK_CFLAGS="${UK_CFLAGS:--std=gnu17 -w}"
+export UK_CFLAGS="${UK_CFLAGS:--std=gnu17}"
 
 make distclean
 UK_DEFCONFIG=$(pwd)/.scripts/defconfig/fc.arm64 make defconfig

@@ -63,7 +63,7 @@ loading `mod_openssl` in a kernel built without it is a fatal startup error:
 | `CONFIG_LIBLIGHTTPD_OPENSSL=y` | enable via `make menuconfig` or add to the `*.x86_64` defconfig |
 | the `mod_openssl` / `:443` block | [`rootfs/lighttpd.conf`](rootfs/lighttpd.conf) — shipped commented out |
 
-Provide your own certificate and keys own at
+Provide your own certificate and key files at
 `rootfs/etc/lighttpd/server.{crt+key}`. To generate a CA-signed
 pair:
 
